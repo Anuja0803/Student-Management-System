@@ -1,0 +1,18 @@
+						SQL Queries for creating table
+
+CREATE DATABASE stm
+GRANT ALL ON stm.* TO ‘fred’@’localhost’ IDENTIFIED BY ‘zap’;
+GRANT ALL ON stm.* TO ‘fred’@’127.0.0.1’ IDENTIFIED BY ‘zap’;
+
+USE stm;
+
+CREATE TABLE students(
+roll_no INTEGER NOT NULL
+AUTO_INCREMENT KEY,
+name VARCHAR(128),
+email VARCHAR(128),
+gender VARCHAR(128),
+contact int,
+dob date,
+address VARCHAR(128)
+) ENGINE=InnoDB CHARSET=utf8;
